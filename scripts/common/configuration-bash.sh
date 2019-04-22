@@ -1,10 +1,10 @@
 echo
 echo "Configuring bash with bash-it"
-brew install autojump
-brew install grc
-brew install coreutils
-brew install rbenv
-brew install watch
+# brew install autojump
+# brew install grc
+# brew install coreutils
+# brew install rbenv
+# brew install watch
 cp files/dircolors.ansi-dark ~/.dircolors
 cp files/.inputrc ~/.inputrc
 rm -rf ~/.bash_it
@@ -16,12 +16,12 @@ cp files/cf_cli.completion.bash ~/.bash_it/completion/available
 ~/.bash_it/install.sh --silent
 source ~/.bash_profile
 source ~/.bash_it/bash_it.sh
-bash-it enable completion git
-bash-it enable plugin autojump
-bash-it enable plugin ssh
-bash-it enable plugin rbenv
-bash-it enable completion ssh
-bash-it enable completion cf_cli
+# bash-it enable completion git
+# bash-it enable plugin autojump
+# bash-it enable plugin ssh
+# bash-it enable plugin rbenv
+# bash-it enable completion ssh
+# bash-it enable completion cf_cli
 
 echo
 echo "Configuring direnv with bash-it"
