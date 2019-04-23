@@ -34,7 +34,8 @@ source ${MY_DIR}/scripts/common/configuration-osx.sh
 echo
 echo "Installing most recent version of Java"
 # Install AdoptOpenJDK with Homebrew (https://github.com/AdoptOpenJDK/homebrew-openjdk)
-brew cask install adoptopenjdk
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk12
 
 # Install JEnv to manage versions (http://www.jenv.be/)
 brew install jenv
@@ -44,8 +45,8 @@ source ~/.bash_profile
 popd
 
 # Add newly installed OpenJDK to JEnv, and set as default version
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.0.2.jdk/Contents/Home/
-jenv global 11.0
+jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/
+jenv global 12
 
 echo
 echo "Installing Intellij"
