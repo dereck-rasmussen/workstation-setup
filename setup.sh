@@ -26,7 +26,7 @@ source ${MY_DIR}/scripts/common/configuration-bash.sh
 # Place any applications that require the user to type in their password here
 
 # source ${MY_DIR}/scripts/common/git.sh
-# source ${MY_DIR}/scripts/common/git-aliases.sh
+source ${MY_DIR}/scripts/common/git-aliases.sh
 source ${MY_DIR}/scripts/common/applications-common.sh
 source ${MY_DIR}/scripts/common/configuration-osx.sh
 # source ${MY_DIR}/scripts/common/configurations.sh
