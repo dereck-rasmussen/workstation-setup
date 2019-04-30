@@ -61,5 +61,9 @@ brew install yarn
 echo "Installing Docker"
 brew cask install docker
 
+# Required for testing GRPC apps
+brew install grpcurl
+brew install jq
+
 echo "===DONE==="
 # source ${MY_DIR}/scripts/common/finished.sh
