@@ -46,11 +46,11 @@ popd
 
 # Add newly installed OpenJDK to JEnv, and set as default version
 jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home/
-jenv global 12
+jenv global 12.0.1
 
 echo
 echo "Installing Intellij"
-brew cask install intellij-idea
+brew cask install intellij-idea || echo "Intellij already installed"
 
 echo
 echo "Installing NodeJS"
@@ -59,7 +59,7 @@ brew link node@10
 brew install yarn
 
 echo "Installing Docker"
-brew cask install docker
+brew cask install docker || echo "Docker already installed"
 
 # Required for testing GRPC apps
 brew install grpcurl
